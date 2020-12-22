@@ -1,0 +1,95 @@
+main {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .selector {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    // padding-bottom: 50px;
+    flex: 1;
+    margin: 0 auto;
+    // height: ;
+
+    label {
+      display: flex;
+      flex: 1;
+    }
+
+    select {
+      margin-left: 20px;
+      // width: 130px;
+      // display: flex;
+      // flex: 1;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+
+  &__header {
+    padding-bottom: 10px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      display: flex;
+      padding: 5px;
+
+      label {
+        display: flex;
+        flex: 1;
+      }
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+input[type="number"] {
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+input[type="number"],
+select {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #ace5ff;
+  font-weight: 600;
+  cursor: pointer;
+}

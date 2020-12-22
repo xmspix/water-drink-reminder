@@ -1,0 +1,21 @@
+{
+  "name": "drink-water-reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "npm run start --prefix server",
+    "start-client": "npm run start --prefix client",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "@slack/web-api": "^5.14.0"
+  }
+}
